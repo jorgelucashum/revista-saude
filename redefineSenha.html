@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Redefinir Senha</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <form class="form" name="formulario" action="">
+        <div class="card">
+            <div class="card-top">
+                <img src="marcauniceplac.png" align="right">
+
+            </div>
+            <div class="card-top2">
+                <h2>Revista Cientifica</h2>
+                <h2> de Saúde</h2>
+            </div>
+
+            <div class="card-top1" align="center" style="padding-top: 50px">
+                <h1>Redefinir Senha</h1>
+            </div>
+
+            <div class="recuperar_senha" layout="column">
+                <div ncy-breadcrumb></div>
+                <div layout="row" layout-align="center center">
+
+
+                    <div class="card-content" layout="column" ng-switch-when="default">
+                        <h2 style="color: #0b7453; font-family: Arial, sans-serif;">Vamos encontrar a sua conta</h2>
+                        <form layout="column" name="resetForm" ng-submit="passwordReset(credentials)">
+                            <md-input-container class="md-block">
+                                <label style="color: #0c6146; font-size: 25px; font-family: Arial, sans-serif; line-height: 1.0">Digite seu e-mail</label>
+                                <input required="" type="email" name="email" ng-model="credentials.email" ng-disabled="showLoader" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" style="border: 5px solid #0b7453; width: 400px; padding: 5px; font-family: Arial, sans-serif;"
+                                    required>
+                                <div ng-messages="resetForm.email.$error" role="alert">
+                                    <div ng-messages-include="email-messages"></div>
+                                </div>
+                                <div class="card-group" align="right">
+                                    <button type="submit" style="padding: 5px;" value="validar" onclick="validar()">Enviar</button>
+                                </div>
+
+                                <p class="login a" align="right">
+                                    Já tem conta?
+                                    <a href="login.html" style="color: #0c6146"> Ir para Login </a>
+                                </p>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="word" align="left">
+            <p>Formate de </p>
+            <p> maneira rapída </p>
+            <p>e simples seus </p>
+            <p>artigos</p>
+        </div>
+
+        <!--
+        <script type="text/javascript">
+            function validar() {
+                var email = document.formulario.email.value;
+                if (email == "") {
+                    alert('Preencha o campo email.')
+                    form.email.focus();
+                    return false;
+                    else {
+                        alert("Enviado com sucesso");
+                        window.location.href = "login.html";
+                    }
+                }
+        </script>
+        -->
+</body>
+
+</html>

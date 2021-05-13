@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.css">
+    <title>Cadastro de Usuário</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!--FORMULÁRIO DE CADASTRO-->
+    <form class="form" name="formulario" action="" method="POST">
+
+
+        <div class="card">
+            <div class="card-top">
+                <img src="marcauniceplac.png" align="right">
+            </div>
+            <div class="card-top1" align="center">
+                <h1>Cadastre-se</h1>
+            </div>
+            <div class="card-top2">
+                <h2>Revista Cientifica</h2>
+                <h2> de Saúde</h2>
+            </div>
+
+
+
+            <div class="card-group">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" id="name" placeholder="Luiz Augusto da Silva" style="border: 5px solid #0b7453" required="">
+            </div>
+
+
+
+            <div class="card-group">
+                <label>Curso</label>
+                <input type="text" name="curso" placeholder="Enfermagem" style="border: 5px solid #0b7453" required>
+            </div>
+
+
+
+            <div class="card-group">
+                <label>Usuário</label>
+                <input type="email" name="email" id="email" placeholder="contato@htmlecsspro.com" style="border: 5px solid #0b7453" required>
+
+            </div>
+
+
+
+            <div class="card-group">
+                <label>Senha</label>
+                <input type="password" name="senha" id="password" placeholder="123456" style="border: 5px solid #0b7453" required>
+                <p style="color: red">*Deve conter no minímo 6 caracteres</p>
+                <label for="passconfirmation">Confirmação de senha</label>
+                <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" style="border: 5px solid #0b7453" required>
+            </div>
+
+
+            <div class="card-group1">
+                <input type="checkbox" name="agreement" id="agreement" required>
+                <label for="agreement" id="agreement-label" required>Li e aceito os <a href="termo de uso.txt">termos de uso</a></label>
+            </div>
+
+
+            <div class="card-group" align="right">
+                <button type="button" value="validar" onclick="validar()">Inscreva-se</button>
+            </div>
+            <p class="login">
+                Já tem conta?
+                <a href="login.html" style="color: #0c6146"> Ir para Login </a>
+            </p>
+    </form>
+    </div>
+
+    </div>
+    <div class="word" align="left">
+        <p>Formate de </p>
+        <p> maneira rapída </p>
+        <p>e simples seus </p>
+        <p>artigos</p>
+    </div>
+
+
+
+
+
+    <script>
+        function validar() {
+            var nome = document.formulario.nome.value;
+            var curso = document.formulario.curso.value;
+            var email = document.formulario.email.value;
+            var senha = document.formulario.senha.value;
+            var conSenha = document.formulario.passconfirmation;
+            var termo = document.formulario.agreement.value;
+
+
+
+
+
+
+            if (nome == "") {
+                alert('Preencha o campo nome.')
+                form.nome.focus();
+                return false;
+            }
+            if (email == "") {
+                alert('Preencha o campo email.')
+                form.email.focus();
+                return false;
+            }
+            if (senha == "" || senha.length <= 5) {
+                alert('Preencha o campo senha com no minimo 6 caracteres.')
+                form.senha.focus();
+                return false;
+            }
+            if (conSenha == "" || conSenha.length <= 5) {
+                alert('Preencha o campo senha com no minimo 6 caracteres.')
+                form.conSenha.focus();
+                return false;
+            }
+
+            if (curso == "") {
+                alert('Preencha o campo curso.')
+                form.curso.focus();
+                return false;
+            }
+            if (termo == false) {
+                alert('Preencha o campo termo.')
+                form.termo.focus();
+                return false;
+            } else {
+                alert("Cadastrado com sucesso");
+                window.location.href = "login.html";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

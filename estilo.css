@@ -1,0 +1,24 @@
+.navbar default .navbar-toogle icon-bar{
+
+	background-color: #fff;
+}
+.navbar default{
+	background: #2c9e42;
+}
+ul> li> a, .navbar-default .navbar-brand, .navbar-default .navbar-brand {
+
+	color: #fff !important;
+}
+.navbar .brand, .navbar .nav >li>a: hover, dropdown-menu, .dropdown-menu >li>a{
+color: #fff;
+background-color: #177129;
+
+}
+.navbar-default .navbar > open >a, .navbar-default .navbar> open > a:focus,
+.navbar-default .navbar > open >a:hover, .navbar-default .navbar-toogle:focus,
+.navbar-default .navbar-toogle: hover, .dropdown-menu > li>a:hover{
+
+	background-color: #177129;
+	border-color: 177129;
+	background: #fff;
+}

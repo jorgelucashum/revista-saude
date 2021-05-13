@@ -1,0 +1,273 @@
+body {
+    background-image: url(fundo.png)
+}
+
+.form {
+    width: 450px;
+    padding-top: 40px;
+    margin-left: 800px;
+}
+
+.card {
+    box-shadow: 1px 1px 5px #ccc;
+    padding: 75px;
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.7);
+    float: right;
+    border-radius: 5px;
+}
+
+.card1 {
+    box-shadow: 1px 1px 1px #ccc;
+    padding: 75px;
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.7);
+    float: right;
+    border-radius: 5px;
+}
+
+.card-top {
+    position: absolute;
+    right: 1%;
+    top: 3%;
+    text-align: right;
+    color: rgb(11, 116, 83);
+    font-family: Kaushan Script, cursive;
+}
+
+.card-top2 {
+    position: relative;
+    line-height: 0.5;
+    font-size: 18px;
+    top: -65px;
+    left: -150px;
+    text-align: center;
+    color: rgb(11, 116, 83);
+    font-family: Kaushan Script, cursive;
+}
+
+.card-group,
+.card-content {
+    margin-bottom: 1px;
+}
+
+.card-group>label,
+.resetForm>label {
+    width: 100%;
+    color: rgb(11, 116, 83);
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.card-group>input,
+.resetForm>input {
+    border-radius: 5px;
+    outline: 0;
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.card-group>button {
+    background-image: linear-gradient(to right, green, #0b7453);
+    width: 30%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffdc24;
+    font-size: 18px;
+    font-family: Trebuchet MS, sans-serif;
+}
+
+.card-group1>label {
+    width: 100%;
+    color: rgb(11, 116, 83);
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.card-group1>input {
+    border-radius: 5px;
+    outline: 0;
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+}
+
+div.word {
+    width: 50%;
+    font-size: 60px;
+    color: #00734f;
+}
+
+div.word>p {
+    text-align: center;
+    font-family: Kaushan Script, cursive;
+    transform: rotate(-10deg)
+}
+
+.cadastro>a {
+    text-decoration: none;
+    color: #00734f;
+    width: 25%;
+    position: center;
+    top: 462px;
+    right: 99px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.esqueci>a {
+    text-decoration: none;
+    color: #00734f;
+    width: 25%;
+    position: absolute;
+    top: 462px;
+    right: 99px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.login {
+    text-decoration: none;
+    color: #00734f;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    position: left;
+    font-family: Arial, sans-serif;
+}
+
+.login>a {
+    text-decoration: none;
+    color: #00734f;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.card-top1 {
+    position: absolute;
+    right: 35%;
+    top: 10%;
+    margin-bottom: 10px;
+    color: rgb(11, 116, 83);
+    font-family: Kaushan Script, cursive;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement,
+#agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation {
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+}
+
+.template {
+    display: none;
+}
+
+.resetForm>label {
+    width: 100%;
+    color: rgb(11, 116, 83);
+    font-size: 25px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.resetForm>input {
+    border-radius: 5px;
+    outline: 0;
+    width: 400px;
+    height: 40px;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* abaixo está o CSS implementado para criar o gerador de arquivo*/
+
+.card-gerarArq {
+    margin-bottom: 1px;
+}
+
+.card-gerarArq>label {
+    width: 100%;
+    color: rgb(11, 116, 83);
+    font-size: 16px;
+    padding: 5px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    display: block;
+}
+
+.card-gerarArq>input {
+    border: 2px solid #0b7453;
+    outline: 0;
+    width: 600px;
+    height: 18px;
+    font-size: 16px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.card-gerarArq>textarea {
+    border: 2px solid #0b7453;
+    outline: 0;
+    width: 600px;
+    height: 180px;
+    font-size: 16px;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.card-gerarArq2 {
+    margin-bottom: 1px;
+}
+
+.card-gerarArq2>h3 {
+    width: 100%;
+    color: rgb(11, 116, 83);
+    font-family: Arial, sans-serif;
+}
+
+.card-gerarArq2>label {
+    width: 100%;
+    color: rgb(11, 116, 83);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.card-gerarArq2>input {
+    border-radius: 5px;
+    outline: 0;
+    font-size: 16px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}

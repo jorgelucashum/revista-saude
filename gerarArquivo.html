@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Formulário</title>
+
+</head>
+
+<body>
+
+    <form class="form" method="post" action="">
+        <div class="card">
+            <div class="card-top">
+                <img src="marcauniceplac.png">
+            </div>
+
+            <div class="card-top2">
+                <h2>Revista Cientifica</h2>
+                <h2> de Saúde</h2>
+            </div>
+
+            <p>
+                <br><br>
+            </p>
+
+            <div class="card-gerarArq2">
+                <h3>Escolha a categoria do manuscrito:</h3>
+                <input name="cat_manuescrito" required="required" type="radio" value="editorial" />
+                <label for="input_editorial">Editorial</label>
+
+                <input name="cat_manuescrito" required="required" type="radio" value="pesquisa" />
+                <label for="input_pesquisa">Pesquisa</label>
+
+                <input name="cat_manuescrito" required="required" type="radio" value="revisao" />
+                <label for="input_revisao">Revisão</label>
+
+                <input name="cat_manuescrito" required="required" type="radio" value="relato" />
+                <label for="input_relato">Relato de experiência</label>
+            </div>
+
+            <br>
+            <div class="card-gerarArq">
+                <label for="titulo_doc">Tílulo do documento:<br></label>
+                <input name="titulo_doc" required="required" type="text" placeholder="A importancia da água..." width="100" />
+
+                <label for="input_autores">Autor(es):</label>
+                <input name="input_autores" required="required" type="text" placeholder="Machado de Assis..." />
+
+                <label for="input_resumo">Resumo:</label>
+                <textarea name="input_resumo" required="required" cols="50"></textarea>
+
+                <label for="input_pchaves">Palavras Chaves: </label>
+                <input name="input_pchaves" required="required" type="text " placeholder="Cosncientização da água, redução de gastos, etc..." />
+
+                <label for="input_introducao">Introdução:</label>
+                <textarea name="input_introducao" required="required"></textarea>
+
+                <label for="input_citacoes">Citações:</label>
+                <input name="input_citacoes" required="required" type="text " placeholder="..." />
+
+                <label for="input_desenvolvimento">Desenvolvimento:</label>
+                <textarea name="input_desenvolvimento" required="required"></textarea>
+
+                <label for="input_finais">Considerações finais:</label>
+                <textarea name="input_finais" required="required"></textarea>
+
+                <label for="input_referencias">Refências bibliográficas:</label>
+                <textarea name="input_referencias" required="required"></textarea>
+
+            </div>
+
+            <div class="card-group" align="right">
+                <button type="submit">Gerar arquivo </button>
+            </div>
+
+        </div>
+
+    </form>
+
+    <div class="word" align="left">
+        <p>Formate de </p>
+        <p> maneira rápida </p>
+        <p>e simples seus </p>
+        <p>artigos</p>
+    </div>
+
+
+</body>
+
+</html>
